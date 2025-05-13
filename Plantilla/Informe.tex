@@ -1,0 +1,84 @@
+\documentclass[a4paper, reprint, showkeys, nofootinbib, twoside]{revtex4-1}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{float}
+\usepackage[pdftex, pdftitle={Article}, pdfauthor={Author}]{hyperref}
+\usepackage[colorinlistoftodos, color=green!40, prependcaption]{todonotes}
+\usepackage{amsthm}
+\usepackage{textcomp}
+\usepackage{mathtools}
+\usepackage{physics}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[left=23mm,right=13mm,top=35mm,columnsep=15pt]{geometry} 
+\usepackage{adjustbox}
+\usepackage{placeins}
+\usepackage{lipsum}
+\usepackage{csquotes}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+%\setlength{\marginparwidth}{2.5cm} % Comentar esta línea para probar
+
+
+\begin{document}
+
+
+\title{Informe}
+
+
+\author{Sergio Laverde}
+\email[Correo institucional: ]{s.laverdeg@uniandes.edu.co}
+
+\author{Samuel Hernandez}
+\email[Correo institucional: ]{sm.hernandezc1@uniandes.edu.co}
+
+\affiliation{Universidad de los Andes, Bogotá, Colombia.}
+
+\date{\today}
+
+
+\begin{abstract}
+
+\end{abstract}
+
+\maketitle
+
+\section{Introducción}
+
+\section{Montaje experimental y metodología}
+
+\section{Resultados y análisis}
+
+\section{Conclusiones}
+
+\bibliographystyle{apalike}
+\bibliography{Referencias}
+
+\section{Anexos}
+
+\subsection{Criterios}
+\label{Criterios}
+\begin{itemize}
+    \item 
+Precisión$:=\frac{\sigma}{X_{exp}}\leq 0.1$
+    \item 
+$Exactitud:=\left| X_{real} - X_{exp} \right| \leq 3\cdot \sigma$
+\end{itemize}
+
+\subsection{Apéndice de cálculo}
+\label{Calculos}
+\begin{itemize}
+    
+    \item \textbf{Propagación de errores:}
+    \begin{equation}
+        \centering
+        \sigma_{f} = \sqrt{\sum_{i}^{n}\left(\frac{\partial f}{\partial x_{i}} \sigma x_{i}\right)^{2}}
+        \label{eq: error_propagation}
+    \end{equation}
+
+\end{itemize}
+
+
+\end{document}
